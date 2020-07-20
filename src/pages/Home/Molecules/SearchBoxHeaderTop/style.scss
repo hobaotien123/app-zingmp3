@@ -1,0 +1,19 @@
+.header-top-wrapper{
+    .input-search-box-wrapper{
+        position: relative;
+        img{
+            width: 20px;
+            position: absolute;
+            top: 27%;
+            left: 2.5%;
+        }
+        input{
+            width: 500px;
+            padding-left: 50px;
+            height: 40px;
+            border: 1px solid #eeeeee;
+            border-radius: 10px;
+            outline: none;
+        }
+    }
+}
