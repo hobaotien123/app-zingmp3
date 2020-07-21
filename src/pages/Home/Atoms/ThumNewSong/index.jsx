@@ -3,7 +3,7 @@ import './style.scss';
 
 const ThumNewSong = (props) => {
     return(
-        <img src={props.item.thumNewSong}/>
+        <img src={props.item.thumNewSong} />
     );
 }
 

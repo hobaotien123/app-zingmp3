@@ -6,7 +6,7 @@ const ListMvHot = (props) => {
     return(
         <div className='list-mv-hot-wrapper'>
             {
-                props.arr.map(function(item,index){
+                props.arr.map((item,index) => {
                     return <ItemMvHot item={item} key={index}/>
                 })
             }

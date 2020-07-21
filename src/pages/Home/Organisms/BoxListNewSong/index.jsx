@@ -1,13 +1,14 @@
 import React from 'react';
 import './style.scss';
-import ThumNewSong from '../../Atoms/ThumNewSong';
-import BoxTitleNewSong from '../../Molecules/BoxTitleNewSong';
+import BoxItemNewSong from '../BoxItemNewSong';
 const BoxListNewSong = (props) => {
-    const { item } = props
     return(
-        <div className='box-item-new-song-wrapper'>
-            <ThumNewSong item={item} />
-            <BoxTitleNewSong item={item} />
+        <div className='box-list-item-new-song-wrapper'>
+            {
+                props.arr.map(function(item,index){
+                    return <BoxItemNewSong item={item} key={index}/>
+                })
+            }
         </div>
     );
 }

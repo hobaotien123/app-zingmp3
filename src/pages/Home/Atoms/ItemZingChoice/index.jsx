@@ -1,5 +1,4 @@
 import React from 'react';
-import ItemZingChart from '../ItemZingChart';
 
 const ItemZingChoice = (props) => {
     return(

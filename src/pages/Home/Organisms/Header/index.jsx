@@ -3,7 +3,7 @@ import HeaderTop from '../HeaderTop';
 import HeaderMain from '../HeaderMain';
 function Header(params) {
     return(
-        <div>
+        <div className='header-wrapper'>
             <HeaderTop />
             <HeaderMain />
         </div>

@@ -10,9 +10,16 @@ const ListTopicTop = (props) => {
     return(
         <div>
             <div className='title-icon-playlist'>
-                <TitlePlayListen titlePlayListen={props.title} />
+                <TitlePlayListen title={props.arr} />
                 <IconPlaylist />
                 <SliderIconPlaylist />
+                <div className='listItemTopicTop'>
+                     {
+                         props.arr.listPlayListen.map((item,index) => {
+                             return <ItemTopicTop item={item} key={index}/>
+                         })
+                     }
+                </div>
             </div>
         </div>
     );

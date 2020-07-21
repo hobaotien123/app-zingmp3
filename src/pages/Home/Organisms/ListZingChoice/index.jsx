@@ -10,7 +10,7 @@ const ListZingChoice = () => {
     return(
         <div className='list-zing-choice-wrapper'>
             {
-                listZingChoice.map(function(item,index){
+                listZingChoice.map((item,index) => {
                     return <ItemZingChoice item={item} key={index} />
                 })
             }

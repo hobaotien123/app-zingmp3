@@ -18,7 +18,8 @@ const ListZingChart = () => {
     ]
     return(
         <div className='list-zing-chart-wrapper'>    
-        {   listZingChart.map(function(item,index){
+        {   
+            listZingChart.map((item,index) => {
                 return <ItemZingChart item={item} key={index} /> 
             })
         }

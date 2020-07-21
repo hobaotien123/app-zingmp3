@@ -9,8 +9,8 @@ const ListItemMix = (props) => {
             <MixInfo info={props.arr} />
             <div className='list-right-mix-wrapper'>
             {
-                props.arr.mixList.map(function(item){
-                    return <MixList item={item}/>
+                props.arr.mixList.map((item,index) => {
+                   return <MixList item={item} key={index}/>
                 })
             }
             </div>

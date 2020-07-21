@@ -3,7 +3,7 @@ import './style.scss';
 
 const TitleNewSong = (props) => {
     return(
-        <h5>{props.item.titleSong}</h5>
+    <h5>{props.item.titleSong}</h5>
     );
 }
 
