@@ -1,0 +1,20 @@
+.box-topic{
+    margin-top: 40px;
+    .box-title-topic-wrapper{
+        display: grid;
+        grid-template-columns: 10% 90%;
+        margin-bottom: 20px;
+        .icon-topic-wrapper{
+            text-align: right;
+            margin-top: 5px;
+            img{
+                width: 25px;
+            }
+        }
+    }
+    .box-thum-topic-wrapper{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        grid-column-gap: 50px;
+    }
+}

@@ -3,7 +3,13 @@
     grid-template-columns: auto auto auto auto auto;
     grid-column-gap: 50px;
     margin-top:20px;
-}
-.title-icon-playlist{
-    
+    .itemTopicTop{
+        h4{
+            height: 65px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+        }
+    }
 }

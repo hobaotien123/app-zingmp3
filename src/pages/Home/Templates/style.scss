@@ -1,3 +1,59 @@
 .Pages{
    
 }
+
+.grid-column-33{
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: auto auto auto;
+    .box-list-item-new-song-wrapper{
+        
+        display: grid;
+        .box-item-new-song-wrapper{
+            display: grid;
+            grid-template-columns: 50px auto;
+            margin-top: 10px;
+            .box-title-new-song-wrapper{
+                margin-left: 20px;
+            }
+        }
+    }
+}
+.box-all-mv-hot{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns:600px auto;
+    grid-column-gap: 30px;
+    .list-mv-hot-wrapper{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 20px;
+        img{
+            width: 100%;
+        }
+    }
+}
+.list-item-mix-wrapper{
+    padding: 30px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 450px auto;
+    background-color: #e3e3ee;
+    .mix-info-wrapper{
+        display: grid;
+        grid-template-columns: 200px auto;
+        grid-column-gap : 15px
+    }
+    .list-right-mix-wrapper{
+        display: grid;
+        grid-template-columns: auto auto;
+        padding-left: 20px;
+        .mix-list-item-wrapper{
+            margin-bottom: 10px;
+            p{
+                display: inline;
+                margin-right: 20px;
+            }
+        }
+    }
+}
