@@ -1,12 +1,13 @@
 .box-topic{
     margin-top: 40px;
     .box-title-topic-wrapper{
-        display: grid;
-        grid-template-columns: 10% 90%;
         margin-bottom: 20px;
+        h2{
+            display: inline-block;
+        }
         .icon-topic-wrapper{
-            text-align: right;
-            margin-top: 5px;
+            display: inline-block;
+            margin-left: 10px;
             img{
                 width: 25px;
             }

@@ -1,0 +1,27 @@
+.overlay-relative{
+    position: relative;
+    overflow: hidden;
+    .overlay-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0;
+        transition: 0.8s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 50px;
+        }
+    }
+}
+.overlay-relative:hover img{
+    transition: 1.5s;
+    transform: scale(1.2);
+}
+.overlay-relative:hover .overlay-img{
+    opacity: 0.75;
+}

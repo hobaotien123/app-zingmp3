@@ -13,8 +13,17 @@
             display: grid;
             grid-template-columns: 50px auto;
             margin-top: 10px;
+            img{
+                width: 50px;
+            }
             .box-title-new-song-wrapper{
                 margin-left: 20px;
+                h5:hover{
+                    color: #6e55b4;
+                }
+                p:hover{
+                    color: #6e55b4;
+                }
             }
         }
     }
@@ -24,25 +33,47 @@
     display: grid;
     grid-template-columns:600px auto;
     grid-column-gap: 30px;
+    .banner-mv-hot-wrapper{
+        img{
+            width: 600px;
+        }
+    }
     .list-mv-hot-wrapper{
         display: grid;
         grid-template-columns: auto auto;
         grid-column-gap: 20px;
-        img{
-            width: 100%;
+        .item-mv-hot-wrapper{
+            img{
+                width: 270px;
+                height: 130px;
+            }
+            p{
+                font-size: 12px;
+            }
+            h6:hover{
+                color: #6e55b4;
+            }
+            p:hover{
+                color : #6e55b4;
+            }
+
         }
-    }
+    } 
 }
+  
 .list-item-mix-wrapper{
     padding: 30px;
-    margin-top: 10px;
+    margin-top: 50px;
     display: grid;
     grid-template-columns: 450px auto;
     background-color: #e3e3ee;
     .mix-info-wrapper{
         display: grid;
         grid-template-columns: 200px auto;
-        grid-column-gap : 15px
+        grid-column-gap : 15px;
+        img{
+            width: 200px;
+        }
     }
     .list-right-mix-wrapper{
         display: grid;

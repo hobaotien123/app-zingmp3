@@ -3,7 +3,7 @@ import TitleTopic from '../TitleTopic';
 
 const TitleMvHot = () => {
     return(
-        <h4>MV HOT</h4>
+        <Link to='/'><h4>MV HOT</h4></Link>
     );
 }
 export default TitleMvHot;
