@@ -7,7 +7,9 @@ interface PropsItemTopicTop {
                 id : number,
                 thumMusic : string,
                 titleMusic : string,
-                singerMusic : string,
+                singerMusic : [
+                    {nameSinger : string}
+                ],
             }
 }
 
@@ -24,7 +26,16 @@ let { item } = props;
                     </div>
                 </div>
                 <h4>{item.titleMusic}</h4>
-                <span>{item.singerMusic}</span>
+                { !item.singerMusic}
+                {
+                   item.singerMusic && item.singerMusic.map((name,index) => {
+                        return(
+                            index < item.singerMusic.length - 1 ? 
+                                <span key={index}>{name.nameSinger},</span>
+                                : <span key={index}>{name.nameSinger}</span>
+                        );
+                    })
+                }
             </div>
     );
 }

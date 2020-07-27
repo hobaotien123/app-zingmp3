@@ -5,8 +5,8 @@ import IconPreNewMusic from '../../Atoms/IconPreNewMusic';
 const SliderIconNewMusic:React.FC = () => {
     return(
         <div className='slider-icon-newmusic-wrapper'>
-            <IconNextNewMusic />
             <IconPreNewMusic />
+            <IconNextNewMusic />
         </div>
     );
 }

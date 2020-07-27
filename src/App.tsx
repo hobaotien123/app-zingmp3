@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 
-
 import Pages from './pages/Home/Templates';
 const App:React.FC =  () => {
   
