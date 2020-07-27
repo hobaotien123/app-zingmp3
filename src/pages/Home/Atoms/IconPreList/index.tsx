@@ -1,9 +1,21 @@
 import React from 'react';
+import classNames from 'classnames';
+
 import './style.scss';
 import iconPreImg from '../../../../images/back.png';
-const IconPreList:React.FC = () => {
+
+interface PropsIconPreList{
+    onClickPre : Function,
+    page : number,
+}
+
+const IconPreList:React.FC<PropsIconPreList> = (props) => {
     return(
-        <img className='icon-pre-list' src={iconPreImg} />
+        <img 
+            onClick={() => props.onClickPre()} 
+            className={classNames('icon-pre-list',{ activeIconPre : props.page > 1} )}
+            src={iconPreImg} 
+        />
     );
 }
 

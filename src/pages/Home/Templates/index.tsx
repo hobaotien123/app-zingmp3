@@ -33,6 +33,7 @@ import listMvHot from '../../../mocks/listMvHot';
 import listItemMix from '../../../mocks/listItemMix';
 import BoxFooter from '../Organisms/BoxFooter';
 const Pages: React.FC = () => {
+    
     return(
         <div>
             <Header />

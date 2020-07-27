@@ -1,9 +1,24 @@
 import React from 'react';
+import classNames from 'classnames';
+
 import './style.scss';
 import iconNextImg from '../../../../images/next.png';
-const IconNextList:React.FC = () => {
+
+
+interface PropsIconNextList{
+    onClickNext : Function,
+    // active : boolean,
+    page : number,
+    listPlay : Array<Object>,
+}
+
+const IconNextList:React.FC<PropsIconNextList> = (props) => {
     return(
-        <img className='icon-next-list' src={iconNextImg} />
+        <img 
+            onClick={() => props.onClickNext()}  
+            className={classNames('icon-next-list',{ activeIconNext : props.page*5 >= props.listPlay.length  } )} 
+            src={iconNextImg}
+        />
     );
 }
 
