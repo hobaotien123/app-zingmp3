@@ -1,6 +1,13 @@
 .title-icon-playlist{
     display: grid;
     grid-template-columns: 400px auto;
+    h3{
+        margin-top: 20px;
+        font-size: 25px;
+        font-weight: bold;
+        display: inline-block;
+        margin-right: 10px;
+    }
     .slider-icon-playlist-wraper{
         text-align: right;
         img{

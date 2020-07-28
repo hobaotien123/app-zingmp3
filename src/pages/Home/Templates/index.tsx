@@ -52,11 +52,8 @@ const Pages: React.FC = () => {
             <ListTopicTop arr={listTopicTop} />
             <BoxTitleNewMusic />
             <ListItemNewMusic />
-            <div className='grid-column-33'>
-                <BoxListNewSong arr={listNewSong} />
-                <BoxListNewSong arr={listNewSong} />
-                <BoxListNewSong arr={listNewSong} />
-            </div>
+            <BoxListNewSong arr={listNewSong} />
+            
             <ListTopicTop arr={listTopicTop} />
             <ListTopicTop arr={listTopicTop} />
             <ListTopicTop arr={listTopicTop} />

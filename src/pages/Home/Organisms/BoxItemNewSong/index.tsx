@@ -8,14 +8,15 @@ interface PropsBoxItemNewSong{
         thumNewSong : string,
         titleSong : string,
         singerSong : string,
+        onItemKeyDown : Function,
     }
 }
 
-const BoxItemNewSong:React.FC<PropsBoxItemNewSong> = (props) => {
+const BoxItemNewSong:React.FC<PropsBoxItemNewSong>= (props) => {
     return(
-        <div className='box-item-new-song-wrapper'>
+        <div className='box-item-new-song-wrapper' >
             <ThumNewSong item={props.item} />
-            <BoxTitleNewSong item={props.item} />
+            <BoxTitleNewSong  item={props.item} />
         </div>
     );
 }
