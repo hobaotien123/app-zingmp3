@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 
 import './style.scss';
-import iconPreImg from '../../../../images/back.png';
+import iconPreImg from '../../images/back.png';
 
 interface PropsIconPreList{
     onClickPre : Function,

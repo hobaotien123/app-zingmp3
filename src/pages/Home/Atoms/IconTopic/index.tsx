@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.scss';
-import iconThumTopic from '../../../../images/next.png';
+import iconThumTopic from '../../images/next.png';
 const IconTopic:React.FC = () => {
     return(
         <div className='icon-topic-wrapper'>

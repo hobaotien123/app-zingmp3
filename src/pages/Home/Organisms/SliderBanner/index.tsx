@@ -4,9 +4,9 @@ import { Carousel } from 'antd';
 
 import './style.scss'
 import sliderImg from './huongly.jpg';
-import sliderImg1 from '../../../../../src/images/slider1.jpg';
-import sliderImg2 from '../../../../../src/images/slider2.jpg';
-import sliderImg3 from '../../../../../src/images/slider3.jpg';
+import sliderImg1 from '../../images/slider1.jpg';
+import sliderImg2 from '../../images/slider2.jpg';
+import sliderImg3 from '../../images/slider3.jpg';
 
 import ItemSliderImg from '../../Molecules/ItemSliderImg';
 const SliderBanner:React.FC = () => {

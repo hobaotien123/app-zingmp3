@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 
 import './style.scss';
-import iconNextImg from '../../../../images/next.png';
+import iconNextImg from '../../images/next.png';
 
 
 interface PropsIconNextList{
@@ -16,7 +16,7 @@ const IconNextList:React.FC<PropsIconNextList> = (props) => {
     return(
         <img 
             onClick={() => props.onClickNext()}  
-            className={classNames('icon-next-list',{ activeIconNext : props.page*5 >= props.listPlay.length  } )} 
+            className={classNames('icon-next-list',{ activeIconNext : props.page * 5 >= props.listPlay.length  } )} 
             src={iconNextImg}
         />
     );
