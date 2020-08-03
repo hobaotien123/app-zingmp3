@@ -1,12 +1,21 @@
 import React from 'react';
 import './style.scss';
+import { Pagination } from 'antd';
 import IconNextNewMusic from '../../Atoms/IconNextNewMusic';
 import IconPreNewMusic from '../../Atoms/IconPreNewMusic';
-const SliderIconNewMusic:React.FC = () => {
+
+interface PropsSliderIconNewMusic{
+    page : number,
+    perPage : number,
+    onChangeMusic : Function,
+    arr : Array<Object>
+}
+
+const SliderIconNewMusic:React.FC<PropsSliderIconNewMusic> = (props) => {
+    
     return(
         <div className='slider-icon-newmusic-wrapper'>
-            <IconPreNewMusic />
-            <IconNextNewMusic />
+            <Pagination onChange={(page,pageSize) => props.onChangeMusic(page,pageSize)} current={props.page} defaultCurrent={1} total={props.arr.length} defaultPageSize={15} ></Pagination>
         </div>
     );
 }

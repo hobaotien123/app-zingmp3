@@ -371,7 +371,7 @@ const listNewSong = [
     },
     { 
         thumNewSong : 'https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/c/f/6/6/cf66d5893210c9c3c1f4ef5bf3bc7d49.jpg',
-        titleSong :  'Cò ơi',
+        titleSong :  'Bài Cuối Cùng',
         singerSong : 'Gia Huy Singer'
     },
     

@@ -8,7 +8,6 @@ interface PropsBoxItemNewSong{
         thumNewSong : string,
         titleSong : string,
         singerSong : string,
-        onItemKeyDown : Function,
     }
 }
 

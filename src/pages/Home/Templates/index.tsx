@@ -32,6 +32,7 @@ import listTopic2 from '../../../mocks/listTopic2';
 import listMvHot from '../../../mocks/listMvHot';
 import listItemMix from '../../../mocks/listItemMix';
 import BoxFooter from '../Organisms/BoxFooter';
+import AllBoxNewSong from '../Organisms/AllBoxNewSong';
 const Pages: React.FC = () => {
     
     return(
@@ -50,9 +51,7 @@ const Pages: React.FC = () => {
             <ListTopicTop arr={listTopic100} />
             <ListTopicTop arr={listTopicHipHop} />
             <ListTopicTop arr={listTopicTop} />
-            <BoxTitleNewMusic />
-            <ListItemNewMusic />
-            <BoxListNewSong arr={listNewSong} />
+            <AllBoxNewSong />
             
             <ListTopicTop arr={listTopicTop} />
             <ListTopicTop arr={listTopicTop} />
