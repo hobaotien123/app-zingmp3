@@ -25,6 +25,7 @@ const listNewSongReducer = (state = initialState, action) => {
       return {
         ...state,
         err: true,
+        loading : false,
       };
     }
     default:

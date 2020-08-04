@@ -1,19 +1,30 @@
-import React, {useState,useCallback} from 'react';
+import React from 'react';
 import './style.scss';
 import BoxItemNewSong from '../BoxItemNewSong';
+import { Alert } from 'antd';
+
 
 interface BoxListNewSong {
-    arr :  Array<Object>
+    arr :  Array<Item>
     start : number,
     end : number,
+    err : boolean,
+}
+type Item = {
+    thumNewSong: string;
+    titleSong: string;
+    singerSong: string;
 }
 
 
 const BoxListNewSong:React.FC<BoxListNewSong> = (props) => {
+    const { err, arr , start , end } = props
     return(
         <div className='box-list-item-new-song-wrapper'>
             {
-                props.arr.slice(props.start,props.end).map(function(item:any,index:any){
+                err === true || arr.length === 0 ? 
+                <Alert message="Không có dữ liệu" type="error" />
+                : arr.slice(start,end).map((item: Item,index: number) => {
                     return <BoxItemNewSong  item={item} key={index}/>
                 })
             }

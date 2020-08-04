@@ -17,7 +17,7 @@ const HeaderMain:React.FC = () => {
     return(
         <div className='header-main-wrapper'>
             {
-                navLinkList.map(function(item,index){
+                navLinkList.map((item,index) => {
                     return <ItemLink item={item} key={index}/>;
                 })
             } 

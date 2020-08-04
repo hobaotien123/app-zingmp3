@@ -10,7 +10,7 @@ const ListItemNewMusic:React.FC = () => {
     return(
         <div className='list-item-newmusic-wrapper'>
             {
-                listItemNewMusic.map(function(item,index){
+                listItemNewMusic.map((item,index) => {
                     return <ItemNewMusic item={item} key={index} />
                 })
             }

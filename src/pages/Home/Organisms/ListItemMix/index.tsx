@@ -11,8 +11,12 @@ interface ListItemMix{
                     mixSub : string,
                     numberSongs : string,  
                   },
-        mixList : Array<Object>,
+        mixList : Array<Item>,
     }
+}
+type Item = {
+    stt: string;
+    nameSong: string;
 }
 
 const ListItemMix:React.FC<ListItemMix> = (props) => {
@@ -21,7 +25,7 @@ const ListItemMix:React.FC<ListItemMix> = (props) => {
             <MixInfo info={props.arr} />
             <div className='list-right-mix-wrapper'>
             {
-                props.arr.mixList.map((item:any,index:any) => {
+                props.arr.mixList.map((item:Item,index:number) => {
                    return <MixList item={item} num={index+1} key={index}/>
                 })
             }

@@ -9,12 +9,19 @@ import SliderIconPlaylist from '../../Molecules/SliderIconPlaylist'
 interface PropsListTopicTop {
     arr : {
         titlePlayListen : string,
-        listPlayListen : Array<Object>
+        listPlayListen : Array<Item>
     },
+}
+type Item = {
+    id: number,
+    thumMusic: string,
+    titleMusic: string,
+    singerMusic: { nameSinger: string }[],
 }
 
 const ListTopicTop:React.FC<PropsListTopicTop> = (props) => {
     const [page,setPage]  = useState(1);
+    
     // const [active,isActive] = useState(false);
     let perPage = 5;
     let start = ( page - 1 ) * perPage;
@@ -47,7 +54,7 @@ const ListTopicTop:React.FC<PropsListTopicTop> = (props) => {
             </div>
             <div className='listItemTopicTop'>
                     {
-                        listPlay.slice(start,end).map((item:any,index:any) => {
+                        listPlay.slice(start,end).map((item:Item,index:number) => {
                             return <ItemTopicTop item={item} key={index}/>
                         })
                     }     

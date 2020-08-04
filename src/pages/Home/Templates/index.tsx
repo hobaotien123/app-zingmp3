@@ -1,38 +1,32 @@
 import React from 'react';
-import './style.scss';
-import Header from '../Organisms/Header';
-import SliderBanner from '../Organisms/SliderBanner';
-import ListTopicTop from '../Organisms/ListTopicTop';
-import ItemTopicTop from '../Molecules/ItemTopicTop';
-import SongRanking from '../Atoms/SongRanking';
-import ListZingChart from '../Organisms/ListZingChart';
-import ListZingChoice from '../Organisms/ListZingChoice';
-import BoxTitleNewMusic from '../Organisms/BoxTitleNewMusic';
-import ListItemNewMusic from '../Organisms/ListItemNewMusic';
-import BoxTopic from '../Organisms/BoxTopic';
-import ThumTopic from '../Atoms/ThumTopic';
-import BoxTitleTopic from '../Molecules/BoxTitleTopic';
-import ListMvHot from '../Organisms/ListMvHot';
 import BannerMvHot from '../Atoms/BannerMvHot';
-import ListItemMix from '../Organisms/ListItemMix';
-import BoxListNewSong from '../Organisms/BoxListNewSong';
-
-import listTopicTop from '../mocks/listTopicTop';
-import listTopicToday from '../mocks/listTopicToday';
-import listTopicMyMix from '../mocks/listTopicMyMix';
-import listTopicYear from '../mocks/listTopicYear';
-import listTopicRap from '../mocks/listTopicRap';
-import listTopicCoffe from '../mocks/listTopicCoffe';
-import listTopic100 from '../mocks/listTopic100';
-import listTopicHipHop from '../mocks/listTopicHipHop';
-import listNewSong from '../mocks/listNewSong';
+import SongRanking from '../Atoms/SongRanking';
+import listItemMix from '../mocks/listItemMix';
+import listMvHot from '../mocks/listMvHot';
 import listTopic from '../mocks/listTopic';
 import listTopic1 from '../mocks/listTopic1';
+import listTopic100 from '../mocks/listTopic100';
 import listTopic2 from '../mocks/listTopic2';
-import listMvHot from '../mocks/listMvHot';
-import listItemMix from '../mocks/listItemMix';
-import BoxFooter from '../Organisms/BoxFooter';
+import listTopicCoffe from '../mocks/listTopicCoffe';
+import listTopicHipHop from '../mocks/listTopicHipHop';
+import listTopicMyMix from '../mocks/listTopicMyMix';
+import listTopicRap from '../mocks/listTopicRap';
+import listTopicToday from '../mocks/listTopicToday';
+import listTopicTop from '../mocks/listTopicTop';
+import listTopicYear from '../mocks/listTopicYear';
 import AllBoxNewSong from '../Organisms/AllBoxNewSong';
+import BoxFooter from '../Organisms/BoxFooter';
+import BoxTopic from '../Organisms/BoxTopic';
+import Header from '../Organisms/Header';
+import ListItemMix from '../Organisms/ListItemMix';
+import ListMvHot from '../Organisms/ListMvHot';
+import ListTopicTop from '../Organisms/ListTopicTop';
+import ListZingChart from '../Organisms/ListZingChart';
+import ListZingChoice from '../Organisms/ListZingChoice';
+import SliderBanner from '../Organisms/SliderBanner';
+import TestPlayMusic from '../Organisms/TestPlayMusic';
+import './style.scss';
+
 const Pages: React.FC = () => {
     
     return(
@@ -67,6 +61,7 @@ const Pages: React.FC = () => {
             <ListItemMix  arr={listItemMix} />
             <ListItemMix  arr={listItemMix} />
             <BoxFooter />
+            <TestPlayMusic />
         </div>
     );
 }

@@ -1,9 +1,7 @@
 import React from 'react';
-import './style.scss';
 import BoxThumTopic from '../../Molecules/BoxThumTopic';
-import TitleTopic from '../../Atoms/TitleTopic';
-import IconTopic from '../../Atoms/IconTopic';
 import BoxTitleTopic from '../../Molecules/BoxTitleTopic';
+import './style.scss';
 
 interface PropsBoxTopic{
     arr : {

@@ -6,15 +6,16 @@ const listTopicTop = {
             thumMusic : 'https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/a/e/d/d/aeddc4fd2381642856daf642e29ceeaa.jpg',
             titleMusic : 'Những Bài Hát Hay Nhất Của Hương Ly',
             singerMusic : [
-                {nameSinger : 'Hương Ly'},
-                {nameSinger : 'Quân A.P'}
             ]
         },
         {
             id:2,
             thumMusic : 'https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/d/9/9/c/d99c875eefbf6d259463ecaf4ffcd939.jpg',
             titleMusic : 'Những Bài Hát Hay Nhất Của Quân A.P',
-            
+            singerMusic : [
+                {nameSinger : 'Hương Ly'},
+                {nameSinger : 'Quân A.P'}
+            ]
         },
         {
             id:3,
@@ -107,7 +108,10 @@ const listTopicTop = {
             id:2,
             thumMusic : 'https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/d/9/9/c/d99c875eefbf6d259463ecaf4ffcd939.jpg',
             titleMusic : 'Những Bài Hát Hay Nhất Của Quân A.P',
-            
+            singerMusic : [
+                {nameSinger : 'Hương Ly'},
+                {nameSinger : 'Quân A.P'}
+            ]
         },
         {
             id:3,

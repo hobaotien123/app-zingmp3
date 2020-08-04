@@ -21,7 +21,7 @@ const SliderBanner:React.FC = () => {
                 <div className='slider-banner-wrapper'>
                     <Carousel >
                         {
-                            listSlider.map(function(item,index){
+                            listSlider.map((item,index) => {
                                 return <ItemSliderImg item={item} key={index} />
                             })
                         }

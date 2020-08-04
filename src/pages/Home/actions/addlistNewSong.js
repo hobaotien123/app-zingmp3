@@ -1,5 +1,5 @@
-import axios from "axios";
 import { NEW_LIST, ERR_LIST, LOADING_LIST } from "../constants/index.js";
+import axios from 'axios';
 
 const url = "http://localhost:3000/listNewSong";
 
@@ -23,11 +23,13 @@ export const errListNewSong = () => {
 export const fetchData = () => {
   return (dispatch) => {
     dispatch(loadingList());
-    return fetch(url)
-      .then((res) => res.json())
-      .then((result) => {
-        dispatch(addlistNewSong(result));
+    return axios.get(url)
+      // .then(res => res.json())
+      .then(res => {
+        dispatch(addlistNewSong(res.data));
       })
-      .catch((err) => dispatch(errListNewSong()));
+      .catch((err) => {
+        console.log('errre', err)
+        dispatch(errListNewSong())});
   };
 };
