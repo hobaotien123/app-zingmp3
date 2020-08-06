@@ -1,5 +1,7 @@
+// libs
 import React from 'react';
-
+// others
+import './style.scss';
 interface ItemZingChoice {
     item : {
         thumZingChoice : string

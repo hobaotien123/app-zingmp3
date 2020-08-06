@@ -1,6 +1,9 @@
+// libs
 import React from 'react';
-import './style.scss';
+// components
 import ThumTopic from '../../Atoms/ThumTopic';
+// other
+import './style.scss';
 
 interface PropsBoxThumTopic{
     arr : {

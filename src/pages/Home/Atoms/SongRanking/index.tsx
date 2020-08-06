@@ -1,4 +1,6 @@
+// libs
 import React from 'react';
+// others
 import './style.scss';
 const SongRanking:React.FC = () => {
     return <div className='song-ranking-wrapper'>

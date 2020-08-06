@@ -1,14 +1,18 @@
-import { Alert, Spin, Skeleton } from "antd";
+// libs
+import { Spin } from "antd";
 import React, { useCallback, useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-
-import { AppState } from "../../../../reducers";
-import { fetchData } from "../../actions/addlistNewSong";
-import { pgDown, pgUp } from "../../constants/index.js";
+// hooks
 import useEventListNewSong from "../../hooks/useEventListNewSong";
+// store 
+import { AppState } from "../../../../reducers";
+//Component
+import { fetchData } from "../../actions/addlistNewSong";
 import BoxListNewSong from "../BoxListNewSong";
 import BoxTitleNewMusic from "../BoxTitleNewMusic";
 import ListItemNewMusic from "../ListItemNewMusic";
+// other 
+import { pgDown, pgUp } from "../../constants/index.js";
 import "./style.scss";
 
 const AllBoxNewSong = () => {

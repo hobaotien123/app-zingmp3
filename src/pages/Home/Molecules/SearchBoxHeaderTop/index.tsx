@@ -1,6 +1,9 @@
+// libs
 import React from "react";
+// others
 import './style.scss';
 import searchImg from './search.png';
+
 const SearchBoxHeaderTop:React.FC = () => {
     return( 
         <div className='input-search-box-wrapper'>

@@ -1,4 +1,7 @@
+// libs
 import React from 'react';
+// others
+import './style.scss';
 
 const CoppyrightFooter:React.FC = () => {
     return(

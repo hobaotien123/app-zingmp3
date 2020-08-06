@@ -1,7 +1,10 @@
+// libs
 import React from 'react';
-import './style.scss';
+// components
 import TitleNewSong from '../../Atoms/TitleNewSong';
 import SingerNewSong from '../../Atoms/SingerNewSong';
+//others
+import './style.scss';
 
 interface PropsBoxTitleNewSong{
     item : {

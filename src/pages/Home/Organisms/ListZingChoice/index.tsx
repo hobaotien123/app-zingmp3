@@ -1,6 +1,9 @@
+// libs
 import React from 'react';
-import './style.scss';
+// components
 import ItemZingChoice from '../../Atoms/ItemZingChoice';
+// others
+import './style.scss';
 const ListZingChoice:React.FC = () => {
     const listZingChoice = [
         { thumZingChoice :  'https://via.placeholder.com/380x120'},

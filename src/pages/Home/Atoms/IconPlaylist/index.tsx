@@ -1,7 +1,8 @@
+//libs
 import React from 'react';
-import './style.scss';
-import iconImgNext from './next.png'
 import { RightOutlined } from '@ant-design/icons';
+// others
+import './style.scss';
 
 const IconPlaylist:React.FC = () => {
     return(

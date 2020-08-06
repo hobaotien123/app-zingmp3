@@ -1,6 +1,7 @@
+// libs
 import React from 'react';
 import classNames from 'classnames';
-
+// others
 import './style.scss';
 import iconNextImg from '../../images/next.png';
 

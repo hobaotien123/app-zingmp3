@@ -1,7 +1,9 @@
+ // libs
 import React from 'react';
-import './style.scss'
 import { Button } from 'antd';
-import { SearchOutlined,PlayCircleOutlined,AudioOutlined,EllipsisOutlined } from '@ant-design/icons';
+import { PlayCircleOutlined,AudioOutlined,EllipsisOutlined } from '@ant-design/icons';
+// others
+import './style.scss'
 
 
 interface MixList{

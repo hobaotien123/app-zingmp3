@@ -1,6 +1,9 @@
+// libs
 import React from 'react';
+// components
+import ItemZingChart from '../../Atoms/ItemZingChart';
+// others
 import './style.scss';
-import ItemZingChart from '../../Atoms/ItemZingChart'
 const ListZingChart:React.FC = () => {
     let listZingChart = [
         {

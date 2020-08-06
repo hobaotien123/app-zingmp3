@@ -1,4 +1,6 @@
+// libs
 import React from 'react';
+// others
 import './style.scss';
 import logo from './logozing.png';
 const LogoHeader:React.FC = () => {

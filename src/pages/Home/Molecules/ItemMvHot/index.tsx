@@ -1,8 +1,11 @@
+// libs
 import React from 'react';
-import './style.scss';
+// components
 import ThumMvHot from '../../Atoms/ThumMvHot';
 import NameMvHot from '../../Atoms/NameMvHot';
 import SingerMvHot from '../../Atoms/SingerMvHot';
+// others
+import './style.scss';
 
 interface PropsItemMvHot{
     item : {

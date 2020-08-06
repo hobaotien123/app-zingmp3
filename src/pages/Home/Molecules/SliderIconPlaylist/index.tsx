@@ -1,7 +1,10 @@
+// libs
 import React from 'react';
-import './style.scss';
+// components
 import IconNextList from '../../Atoms/IconNextList';
 import IconPreList from '../../Atoms/IconPreList';
+// others
+import './style.scss';
 
 interface PropsSliderIconPlaylist {
     onClickNext : Function,

@@ -1,4 +1,6 @@
+//libs
 import React from 'react';
+//others
 import './style.scss'
 
 interface ItemNewMusic{

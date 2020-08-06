@@ -1,6 +1,9 @@
+// libs
 import React from 'react';
-import './style.scss';
+// components
 import ItemLinkFooter from '../../Atoms/ItemLinkFooter';
+// others
+import './style.scss';
 
 const ListLinkFooter:React.FC = () => {
     const listLinkFooter = [

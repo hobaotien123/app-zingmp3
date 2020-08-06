@@ -1,8 +1,8 @@
+// libs
 import React from 'react';
-import './style.scss';
 import { Pagination } from 'antd';
-import IconNextNewMusic from '../../Atoms/IconNextNewMusic';
-import IconPreNewMusic from '../../Atoms/IconPreNewMusic';
+// others
+import './style.scss';
 
 interface PropsSliderIconNewMusic{
     page : number,

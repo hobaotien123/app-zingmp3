@@ -1,8 +1,10 @@
+// libs
 import React from 'react';
-import './style.scss';
-import BoxItemNewSong from '../BoxItemNewSong';
 import { Alert } from 'antd';
-
+// components
+import BoxItemNewSong from '../BoxItemNewSong';
+// other
+import './style.scss';
 
 interface BoxListNewSong {
     arr :  Array<Item>

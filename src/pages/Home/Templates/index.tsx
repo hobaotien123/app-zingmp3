@@ -27,9 +27,7 @@ import SliderBanner from '../Organisms/SliderBanner';
 import TestPlayMusic from '../Organisms/TestPlayMusic';
 import './style.scss';
 
-const Pages: React.FC = () => {
-    
-    return(
+const Pages: React.FC = () =>
         <div>
             <Header />
             <SliderBanner />
@@ -46,7 +44,6 @@ const Pages: React.FC = () => {
             <ListTopicTop arr={listTopicHipHop} />
             <ListTopicTop arr={listTopicTop} />
             <AllBoxNewSong />
-            
             <ListTopicTop arr={listTopicTop} />
             <ListTopicTop arr={listTopicTop} />
             <ListTopicTop arr={listTopicTop} />
@@ -63,6 +60,4 @@ const Pages: React.FC = () => {
             <BoxFooter />
             <TestPlayMusic />
         </div>
-    );
-}
 export default Pages;

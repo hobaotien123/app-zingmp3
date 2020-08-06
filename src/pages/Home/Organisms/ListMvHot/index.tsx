@@ -1,26 +1,25 @@
-import React from 'react';
-import './style.scss';
-import ItemMvHot from '../../Molecules/ItemMvHot';
+// libs
+import React from "react";
+// components
+import ItemMvHot from "../../Molecules/ItemMvHot";
+// others
+import "./style.scss";
 
-interface PropsListMvHot{
-    arr : Array<Item>,
+interface PropsListMvHot {
+  arr: Array<Item>;
 }
 type Item = {
-    thumMvHot: string;
-    nameMvHot: string;
-    singerMvHot: string;
-}
+  thumMvHot: string;
+  nameMvHot: string;
+  singerMvHot: string;
+};
 
-const ListMvHot:React.FC<PropsListMvHot> = (props) => {
-    return(
-        <div className='list-mv-hot-wrapper'>
-            {
-                props.arr.map((item:Item,index:number) => {
-                    return <ItemMvHot item={item} key={index}/>
-                })
-            }
-        </div>
-    );
-}
+const ListMvHot: React.FC<PropsListMvHot> = (props) => (
+  <div className="list-mv-hot-wrapper">
+    {props.arr.map((item: Item, index: number) => (
+      <ItemMvHot item={item} key={index} />
+    ))}
+  </div>
+);
 
 export default ListMvHot;

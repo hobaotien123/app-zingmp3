@@ -1,7 +1,10 @@
+// libs
 import React from 'react';
-import './style.scss';
+// components
 import TitleNewMusic from '../../Atoms/TitleNewMusic';
 import SliderIconNewMusic from '../../Molecules/SliderIconNewMusic';
+// others
+import './style.scss';
 
 interface PropsBoxTitleNewMusic{
     page : number,

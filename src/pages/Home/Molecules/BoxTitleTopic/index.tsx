@@ -1,6 +1,9 @@
+// libs
 import React from 'react';
+// components
 import IconTopic from '../../Atoms/IconTopic';
 import TitleTopic from '../../Atoms/TitleTopic';
+// others
 import './style.scss';
 
 interface PropsBoxTitleTopic{

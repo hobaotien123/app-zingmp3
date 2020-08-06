@@ -1,5 +1,7 @@
+// libs
 import React from 'react';
-import TitleTopic from '../TitleTopic';
+//other
+import './style.scss';
 
 const TitleMvHot = () => {
     return(

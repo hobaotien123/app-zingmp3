@@ -1,7 +1,10 @@
+// libs
 import React from 'react';
-import './style.scss';
+// components
 import TitleMvHot from '../../Atoms/TitileMvHot';
 import SliderIconMvHot from '../../Molecules/SliderIconMvHot';
+// others
+import './style.scss';
 
 const BoxMvHot = () => {
     return(

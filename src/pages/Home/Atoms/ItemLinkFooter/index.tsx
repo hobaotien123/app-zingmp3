@@ -1,5 +1,7 @@
+// libs
 import React from 'react';
-
+// other
+import './style.scss';
 interface PropsItemLinkFooter {
     item : string,
 }

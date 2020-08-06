@@ -1,9 +1,12 @@
+// libs
 import React from 'react';
+// components
+import ItemUserProfile from '../../Atoms/ItemUserProfile';
+// others
 import './style.scss';
 import iconUpload from './upload.png';
 import iconUser from './user.png';
 import iconNotification from './notification.png';
-import ItemUserProfile from '../../Atoms/ItemUserProfile';
 const userProfileListItem = [
     iconUpload,
     iconNotification,

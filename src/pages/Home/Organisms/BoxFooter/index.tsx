@@ -1,8 +1,11 @@
+// libs
 import React from 'react';
-import './style.scss';
+// components
 import LogoFooter from '../../Atoms/LogoFooter';
 import ListLinkFooter from '../../Molecules/ListLinkFooter';
 import CoppyrightFooter from '../../Atoms/CoppyrightFooter';
+// others
+import './style.scss';
 
 const BoxFooter:React.FC = () => {
     return(
