@@ -11,7 +11,7 @@ import "antd/dist/antd.css";
 import "./style.scss";
 interface PropsItemTopicTop {
   item: {
-    id: number;
+    id: string;
     thumMusic: string;
     titleMusic: string;
     singerMusic: { nameSinger: string }[];
@@ -57,60 +57,31 @@ const ItemTopicTop: React.FC<PropsItemTopicTop> = (props) => {
         <div className="overlay-img">
           {like === false && (
             <Tooltip title="Thêm vào Playlist">
-              <Button
+              <Button className='ant-add-playlist'
                 onClick={setLikeTrue}
-                style={{
-                  marginTop: "17px",
-                  width: "23px",
-                  backgroundColor: "transparent",
-                  border: "none",
-                }}
                 type="primary"
                 shape="circle"
-                icon={
-                  <HeartOutlined
-                    style={{ margin: "0px", color: "white", fontSize: "23px" }}
-                  />
-                }
+                icon={<HeartOutlined className='ant-icon-heart'/>}
               />
             </Tooltip>
           )}
 
           {like === true && (
             <Tooltip title="Xoá khỏi Playlist">
-              <Button
+              <Button className='ant-remove-playlist'
                 onClick={setLikeFalse}
-                style={{
-                  marginTop: "17px",
-                  width: "23px",
-                  backgroundColor: "#fff",
-                  border: "none",
-                }}
                 type="primary"
                 shape="circle"
                 icon={
-                  <HeartOutlined
-                    style={{
-                      margin: "0px",
-                      borderRadius: "50%",
-                      color: "black",
-                      fontSize: "23px",
-                    }}
-                  />
+                  <HeartOutlined className='ant-icon-remove-heart'/>
                 }
               />
             </Tooltip>
           )}
 
           <Tooltip title="Play Music">
-            <Button
+            <Button className='ant-play-music'
               onClick={showModal}
-              style={{
-                width: "45px",
-                margin: "0px 10px",
-                border: "none",
-                backgroundColor: "transparent",
-              }}
               type="primary"
               shape="circle"
               icon={
@@ -120,18 +91,11 @@ const ItemTopicTop: React.FC<PropsItemTopicTop> = (props) => {
               }
             />
           </Tooltip>
-          <Button
-            style={{
-              marginTop: "17px",
-              width: "23px",
-              backgroundColor: "transparent",
-              border: "none",
-            }}
+          <Button className='ant-dash-more'
             type="primary"
             shape="circle"
             icon={
-              <DashOutlined
-                style={{ margin: "0px", color: "white", fontSize: "23px" }}
+              <DashOutlined className='ant-icon-dash'
               />
             }
           />

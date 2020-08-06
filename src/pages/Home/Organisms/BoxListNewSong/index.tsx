@@ -5,6 +5,7 @@ import { Alert } from 'antd';
 import BoxItemNewSong from '../BoxItemNewSong';
 // other
 import './style.scss';
+import { Item } from '../../types'
 
 interface BoxListNewSong {
     arr :  Array<Item>
@@ -12,12 +13,6 @@ interface BoxListNewSong {
     end : number,
     err : boolean,
 }
-type Item = {
-    thumNewSong: string;
-    titleSong: string;
-    singerSong: string;
-}
-
 
 const BoxListNewSong:React.FC<BoxListNewSong> = (props) => {
     const { err, arr , start , end } = props

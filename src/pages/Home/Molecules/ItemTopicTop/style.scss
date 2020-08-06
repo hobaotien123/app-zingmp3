@@ -1,6 +1,14 @@
+.itemTopicTop{  
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
 .overlay-relative{
     position: relative;
     overflow: hidden;
+    img{
+        width: 200px;
+        height: 200px;
+    }
     .overlay-img{
         position: absolute;
         top: 0;
@@ -27,4 +35,44 @@
 }
 .overlay-relative:hover .overlay-img{
     opacity: 0.75;
+}
+.ant-add-playlist{
+    margin-top: 17px;
+    width: 23px;
+    background-color: transparent;
+    border : none;
+    .ant-icon-heart{
+        margin: 0px; 
+        color: #fff; 
+        font-size: 23px;
+    }
+}
+.ant-remove-playlist{
+    margin-top: 17px;
+    width: 23px;
+    background-color: #fff;
+    border: none;
+    .ant-icon-remove-heart{
+        margin: 0px;
+        border-radius: 50%;
+        color: black;
+        font-size: 23px;
+    }
+}
+.ant-play-music{
+    width: 45px;
+    margin: 0px 10px;
+    border : none;
+    background-color: transparent;
+}
+.ant-dash-more{
+    margin-top: 17px;
+    width: 23px;
+    background-color: transparent;
+    border: none;
+    .ant-icon-dash{
+        margin: 0px; 
+        color: white; 
+        font-size: 23px;
+    }
 }

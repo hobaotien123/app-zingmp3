@@ -5,21 +5,16 @@ import TitlePlayListen from "../../Atoms/TitlePlayListen";
 import IconPlaylist from "../../Atoms/IconPlaylist";
 import ItemTopicTop from "../../Molecules/ItemTopicTop";
 import SliderIconPlaylist from "../../Molecules/SliderIconPlaylist";
+
 // others
 import "./style.scss";
-
+import { TypeItemListTopicTop } from "../../types";
 interface PropsListTopicTop {
   arr: {
     titlePlayListen: string;
-    listPlayListen: Array<Item>;
+    listPlayListen: Array<TypeItemListTopicTop>;
   };
 }
-type Item = {
-  id: number;
-  thumMusic: string;
-  titleMusic: string;
-  singerMusic: { nameSinger: string }[];
-};
 
 const ListTopicTop: React.FC<PropsListTopicTop> = (props) => {
   const [page, setPage] = useState(1);
@@ -59,7 +54,7 @@ const ListTopicTop: React.FC<PropsListTopicTop> = (props) => {
         />
       </div>
       <div className="listItemTopicTop">
-        {listPlay.slice(start, end).map((item: Item, index: number) => (
+        {listPlay.slice(start, end).map((item: TypeItemListTopicTop, index: number) => (
           <ItemTopicTop item={item} key={index} />
         ))}
       </div>
