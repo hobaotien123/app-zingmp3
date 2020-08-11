@@ -14,6 +14,7 @@ const InputField = (props) => {
             { label && <label>{label}</label> }
             <input className='input-form-login-wrapper'
                 placeholder={placeholder}
+                type={type}
                 {...field}
                 
             >

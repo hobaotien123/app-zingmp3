@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 // hooks
 import useEventListNewSong from "../../hooks/useEventListNewSong";
 // store 
-import { AppState } from "../../../../reducers";
+import { AppState } from "../../reducers";
 //Component
 import { fetchData } from "../../actions/addlistNewSong";
 import BoxListNewSong from "../BoxListNewSong";

@@ -7,6 +7,8 @@ import './style.scss';
 import iconUpload from './upload.png';
 import iconUser from './user.png';
 import iconNotification from './notification.png';
+import LoginHeaderTop from '../../Atoms/LoginHeaderTop';
+import LogOutHeaderTop from '../../Atoms/LogOutHeaderTop';
 const userProfileListItem = [
     iconUpload,
     iconNotification,
@@ -20,6 +22,8 @@ const UserProFile:React.FC = () => {
                    return <ItemUserProfile key={index} item={item} />;
                 })
             }
+            <LoginHeaderTop />
+            <LogOutHeaderTop />
         </div>
     );
 }
